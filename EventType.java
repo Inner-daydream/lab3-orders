@@ -1,3 +1,3 @@
 public enum EventType {
-    itemAdded
+    ITEM_ADDED
 }
