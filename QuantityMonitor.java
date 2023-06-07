@@ -7,7 +7,7 @@ public class QuantityMonitor implements OrderObserver{
     }
     public void update(Order order) {      
         if (order.getCount() > quantityThreshold) {
-            order.applyDiscount(discount);
+            order.applyDiscount(this, discount);
         }
     }
 }

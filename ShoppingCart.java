@@ -10,6 +10,8 @@ public class ShoppingCart {
         order.addItem(100);
         System.out.println(order);
         order.addItem(101);
+        order.addItem(33);
+        order.addItem(10);
         System.out.println(order);
         for (int i = 0; i < 10; i++) {
             order.addItem(10);

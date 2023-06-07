@@ -1,4 +1,5 @@
 public class PriceMonitor implements OrderObserver {
+    OrderManager manager;
     double discount;
     double priceThreshold;
     PriceMonitor(double priceThreshold, double discount) {
@@ -7,7 +8,8 @@ public class PriceMonitor implements OrderObserver {
     }
     public void update(Order order) {
         if (order.getTotalCost() > priceThreshold) {
-            order.applyDiscount(discount);
+            order.applyDiscount(this, discount);
+
         }
     }
 }
