@@ -2,11 +2,7 @@ public class Order {
     private int id;
     private int itemCount;
     private double itemCost;
-
-    public void attach(OrderObserver observer) {
-    }
-    public void dettach(OrderObserver observer) {
-    }
+    
     public int getCount() {
         return itemCount;
     }
